@@ -1,4 +1,5 @@
 The original statement is as follows:
+
 ```
 We want to build a small Logger library in the programming language of our choice. This will be a library used by other development teams in the company, so we need to build it as such and it needs to be generic and open enough.
 ```

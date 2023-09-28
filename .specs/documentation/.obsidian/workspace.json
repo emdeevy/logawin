@@ -1,0 +1,197 @@
+{
+  "main": {
+    "id": "86c2919db23c559a",
+    "type": "split",
+    "children": [
+      {
+        "id": "002bee3e5a42bde0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "285a823ca42c11e1",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "eda6bc7fc479149f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Log/Levels/Debug.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "de79a8c8246f4b1d",
+    "type": "split",
+    "children": [
+      {
+        "id": "67cc3c7309ec8de4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "72b2779e4f5e79e1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "48efd24be7584f97",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e9b1777c1347f74b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "15b732f47d4c6ea6",
+    "type": "split",
+    "children": [
+      {
+        "id": "e30f0a656286e047",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6abfa34a870d9627",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Log/Levels/Debug.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "28ad027a4035b51b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Log/Levels/Debug.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b0d827923246ea33",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "5dba1cd6dcb3c58c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Log/Levels/Debug.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "eda6bc7fc479149f",
+  "lastOpenFiles": [
+    "Log/Levels/Error.md",
+    "Log/Levels/Info.md",
+    "Log/Levels/Log Levels Overview.md",
+    "Log/Levels/Warning.md",
+    "Log/Log Overview.md",
+    "Log/Message.md",
+    "Logger/Responsibilities/Send.md",
+    "Logger/Logger Overview.md",
+    "Original Specifications.md",
+    "Output Streams/Configuration.md",
+    "Output Streams/Output Streams Overview.md",
+    "Log/Levels/Debug.md",
+    "Log/Levels",
+    "Output Streams",
+    "Logger/Responsibilities",
+    "Logger/Write.md",
+    "Logger",
+    "Programming Language.md",
+    "Multi-threading.md",
+    "Runtime.md",
+    "Messages/Log.md",
+    "Log/Log/Overview.md",
+    "Messages/Event.md",
+    "Log/Log/Error.md",
+    "Log/Log/Info.md",
+    "Log/Log/Debug.md",
+    "Messages/Type Info.md",
+    "Log/Log",
+    "Untitled",
+    "Messages/Type Debug.md",
+    "Messages/Types.md",
+    "Logging/Overview.md",
+    "Targets",
+    "Log",
+    "Logging",
+    "Untitled.canvas"
+  ]
+}

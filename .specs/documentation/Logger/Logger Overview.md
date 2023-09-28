@@ -1,0 +1,1 @@
+For the sake of simplicity, our Logger will only have the responsibility to format and [[Send|send]] logs.

@@ -1,0 +1,1 @@
+These should be the streams set inside a logger, they are the ones responsible for actually outputting the messages within a log.

@@ -1,0 +1,1 @@
+The message is the string contained inside our [[Log Overview|log record]] meant to be sent to our [[Output Streams/Output Streams Overview|output streams]] in a formatted version depending on their [[Log Levels Overview|log level]].
