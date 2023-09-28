@@ -1,0 +1,10 @@
+/.idea/
+/.config/
+/.logs/
+/node_modules/
+/vendor/
+.env
+.env.*
+*.env.*
+.config
+*.config
