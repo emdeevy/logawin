@@ -21,7 +21,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Log/Levels/Debug.md",
+                "file": "Original Specifications.md",
                 "mode": "source",
                 "source": false
               }
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Log/Levels/Debug.md",
+                "file": "Original Specifications.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Log/Levels/Debug.md",
+                "file": "Original Specifications.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Log/Levels/Debug.md"
+                "file": "Original Specifications.md"
               }
             }
           }
@@ -155,8 +155,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "eda6bc7fc479149f",
+  "active": "72b2779e4f5e79e1",
   "lastOpenFiles": [
+    "Log/Levels/Debug.md",
     "Log/Levels/Error.md",
     "Log/Levels/Info.md",
     "Log/Levels/Log Levels Overview.md",
@@ -168,7 +169,6 @@
     "Original Specifications.md",
     "Output Streams/Configuration.md",
     "Output Streams/Output Streams Overview.md",
-    "Log/Levels/Debug.md",
     "Log/Levels",
     "Output Streams",
     "Logger/Responsibilities",

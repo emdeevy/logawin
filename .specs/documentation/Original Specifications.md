@@ -1,5 +1,6 @@
 # Logger Exercise
 
+Note: Use Obsidian to read these unless you enjoy having your eyes bleed.
 ## Overview
 We aim to build a small Logger library that can be used by other development teams within the company. This library should be generic, open, and capable of handling different log levels and targets.
 
