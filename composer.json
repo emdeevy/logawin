@@ -1,0 +1,15 @@
+{
+  "name": "emdeevy/logawin",
+  "description": "A simple and lightweight solution for logging messages to the console in PHP applications",
+  "keywords": ["logger", "awin", "challenge"],
+  "authors": [
+    {
+      "name": "Denis Makula",
+      "email": "denis@emdeevy.dev"
+    }
+  ],
+  "require": {
+    "php": ">=8.2"
+  },
+  "license": "MIT"
+}
