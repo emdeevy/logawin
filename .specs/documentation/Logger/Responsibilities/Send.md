@@ -1,1 +1,0 @@
-The responsibility to take a log as a parameter, send it to a formatter, and further on hand it to an output stream.
