@@ -19,13 +19,12 @@ The `Logawin` library provides a simple and lightweight solution for logging mes
     {
       "type": "git",
       "url": "https://github.com/emdeevy/logawin.git",
-      "branch": "php/point-three"
     }
 // ]
 ```
 ```json
 // "require": {
-        "emdeevy/logawin": "dev-php/point-three"
+        "emdeevy/logawin": "dev-main"
 // }
 
 ```
