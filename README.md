@@ -12,18 +12,18 @@ The `Logawin` library provides a simple and lightweight solution for logging mes
 
 1. Add the repository and require the package in the `composer.json` file.
 
-```php
+```json
 // "repositories": [
     {
       "type": "git",
       "url": "https://github.com/emdeevy/logawin.git",
-      "branch": "php/point-one"
+      "branch": "php/point-two"
     }
 // ]
 ```
-```php
+```json
 // "require": {
-        "emdeevy/logawin": "dev-php/point-one"
+        "emdeevy/logawin": "dev-php/point-two"
 // }
 
 ```
@@ -34,6 +34,8 @@ The `Logawin` library provides a simple and lightweight solution for logging mes
 <?php declare(strict_types=1);
 require_once 'vendor/autoload.php';
 
+use Logawin\Level;
+use Logawin\Logger;
 use Logawin\LoggerAware;
 
 class Client
@@ -42,14 +44,19 @@ class Client
 
     public function performAction(Stringable|string $action): void
     {
+        $this->setLogger(new Logger(Level::WARNING));
+
         $logger = $this->getLogger();
 
-        $logger->log(sprintf("A Client performed %s", $action));
+        $logger->log(sprintf("A Client performed %s", $action), Level::DEBUG);
+        $logger->log(sprintf("A Client performed %s", $action), Level::INFO);
+        $logger->log(sprintf("A Client performed %s", $action), Level::WARNING);
+        $logger->log(sprintf("A Client performed %s", $action), Level::ERROR);
     }
 }
 
 $me = new Client();
-$me->performAction("some event");
+$me->performAction("comment");
 ```
 
 Above is what i consider the elegant version, you could just inject the logger as a `LoggerInterface` parameter in any method or constructor and you'll be just as fine.
@@ -60,7 +67,7 @@ Above is what i consider the elegant version, you could just inject the logger a
 
 - **Single Responsibility Principle (SRP)**: The `Logger` class has a single responsibility: logging messages to the console.
 
-- **Open/Closed Principle (OCP)**: The class is open for extension (you can add more methods or features), but unfortunately, we would not benefit from having it closed for modification, as, for example, abstracting Log Levels later on would add unnecessary complexity.
+- **Open/Closed Principle (OCP)**: The class is open for extension (you can add more methods or features), but unfortunately, we would not benefit from having it closed for modification, as, to maintain efficiency, minimal modifications will be required in order to restrict log levels per target.
 
 - **Liskov Substitution Principle (LSP)**: Subclasses could be used interchangeably with `Logger` without affecting the correctness of the program but as its nature is to log/output messages, it should never have 'continued' implementation.
 
