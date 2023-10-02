@@ -8,3 +8,7 @@
 *.env.*
 .config
 *.config
+phpunit.xml
+composer.lock
+.phpunit.result.cache
+.phpunit.cache

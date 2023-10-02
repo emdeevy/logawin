@@ -13,6 +13,10 @@ trait LoggerAware
 
     public function getLogger(): LoggerInterface
     {
+        if (!isset($this->Logger)) {
+            $this->Logger = new Logger();
+        }
+
         return $this->Logger;
     }
 }
