@@ -5,6 +5,7 @@ The `Logawin` library provides a simple and lightweight solution for logging mes
 ## Features
 
 - **Simple Logging**: Log messages to the console with just one method call.
+- **Log Levels**: Ability to add severity to logs (DEBUG, INFO, WARNING, ERROR).
 - **SOLID Principles**: The library (ALMOST) follows SOLID principles for maintainability and extensibility.
 - **Dependency Injection**: Libary designed to be used as a dependency through the dependency injection design pattern.
 
@@ -59,7 +60,7 @@ $me = new Client();
 $me->performAction("comment");
 ```
 
-Above is what i consider the elegant version, you could just inject the logger as a `LoggerInterface` parameter in any method or constructor and you'll be just as fine.
+Above is what I consider the elegant version, you could just inject the logger as a `LoggerInterface` parameter in any method or constructor and you'll be just as fine.
 
 ## Design Principles
 
