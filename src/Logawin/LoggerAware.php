@@ -35,7 +35,7 @@ trait LoggerAware
     public function getLogger(): LoggerInterface
     {
         if (!isset($this->Logger)) {
-            $this->Logger = new Logger();
+            $this->Logger = new Logger(Level::DEBUG);
         }
 
         return $this->Logger;
