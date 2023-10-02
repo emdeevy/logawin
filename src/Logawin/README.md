@@ -10,18 +10,48 @@ The `Logawin` library provides a simple and lightweight solution for logging mes
 
 ## Installation
 
-Simply include the `ConsoleLogger.php` file in your project.
+1. Add the repository and require the package in the `composer.json` file.
 
 ```php
-use Logawin\Logger;
+// "repositories": [
+    {
+      "type": "git",
+      "url": "https://github.com/emdeevy/logawin.git",
+      "branch": "php/point-one"
+    }
+// ]
 ```
+```php
+// "require": {
+        "emdeevy/logawin": "dev-php/point-one"
+// }
 
+```
 ## Usage
 
 ```php
-$logger = Logger::getInstance();
-$logger->log("This is a log message.");
+<?php declare(strict_types=1);
+require_once 'vendor/autoload.php';
+
+use Logawin\LoggerAware;
+
+class Client
+{
+    use LoggerAware;
+
+    public function performAction(Stringable|string $action): void
+    {
+        $logger = $this->getLogger();
+
+        $logger->log(sprintf("A Client performed %s", $action));
+    }
+}
+
+$me = new Client();
+$me->performAction("some event");
 ```
+
+Above is what i consider the elegant version, you could just inject the logger as a `LoggerInterface` parameter in any method or constructor and you'll be just as fine.
 
 ## Design Principles
 
