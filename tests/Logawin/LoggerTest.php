@@ -6,12 +6,18 @@ use PHPUnit\Framework\TestCase;
 
 class LoggerTest extends TestCase
 {
+    /**
+     * @covers Logger::__construct
+     */
     public function testLoggerImplementsInterface()
     {
         $logger = new Logger();
         $this->assertInstanceOf(LoggerInterface::class, $logger);
     }
 
+    /**
+     * @covers Logger::log
+     */
     public function testLoggerLogsMessage()
     {
         $logger = new Logger();
@@ -24,6 +30,11 @@ class LoggerTest extends TestCase
         $this->assertStringContainsString('[Console]: Test message', $output);
     }
 
+    /**
+     * @covers LoggerAware::setLogger
+     * @covers LoggerAware::getLogger
+     * @covers LoggerAware::logMessage
+     */
     public function testLoggerAwareTrait()
     {
         $class = new class {
@@ -45,6 +56,11 @@ class LoggerTest extends TestCase
         $this->assertStringContainsString('[Console]: Test message', $output);
     }
 
+    /**
+     * @covers LoggerAware::setLogger
+     * @covers LoggerAware::getLogger
+     * @covers LoggerAware::logMessage
+     */
     public function testLoggerAwareTraitWithoutSettingLogger()
     {
         // Create a class that uses the LoggerAware trait
