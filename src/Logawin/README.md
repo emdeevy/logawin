@@ -27,6 +27,7 @@ The `Logawin` library provides a simple and lightweight solution for logging mes
 // }
 
 ```
+2. `composer install` | `composer update`.
 ## Usage
 
 ```php
@@ -55,7 +56,7 @@ Above is what i consider the elegant version, you could just inject the logger a
 
 ## Design Principles
 
-### SOLID Principles
+### SOLID
 
 - **Single Responsibility Principle (SRP)**: The `Logger` class has a single responsibility: logging messages to the console.
 
@@ -67,6 +68,6 @@ Above is what i consider the elegant version, you could just inject the logger a
 
 - **Dependency Inversion Principle (DIP)**: External dependencies, if any, would be abstracted behind interfaces for easy substitution.
 
-### Design Pattern (Singleton)
+### Design Pattern
 
 The `Logger` class is implemented as a dependency interface, promoting maintainability, testability, and flexibility.
