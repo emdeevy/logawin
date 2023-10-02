@@ -91,9 +91,9 @@ Above is what I consider the elegant version, you could just inject the logger a
 
 ### SOLID
 
-- **Single Responsibility Principle (SRP)**: The `Logger` class has a single responsibility: logging messages to the console.
+- **Single Responsibility Principle (SRP)**: All classes have one single responsibility.
 
-- **Open/Closed Principle (OCP)**: The class is open for extension (you can add more methods or features), but unfortunately, we would not benefit from having it closed for modification, as, to maintain efficiency, minimal modifications will be required in order to expand on, for example, taps functionality.
+- **Open/Closed Principle (OCP)**: All classes are open for extension (you can add more methods or features), but unfortunately, we would not benefit from having it closed for modification, as, to maintain efficiency, minimal modifications will be required in order to expand on, for example, taps functionality.
 
 - **Liskov Substitution Principle (LSP)**: Subclasses could be used interchangeably with `Logger` without affecting the correctness of the program but as its nature is to log/output messages, it should never have 'continued' implementation.
 
