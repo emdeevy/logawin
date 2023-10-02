@@ -5,7 +5,7 @@ namespace Logawin;
 use Stringable;
 
 /**
- * LoggerInterface
+ * interface LoggerInterface
  *
  * This interface defines the contract for a message logger.
  *
