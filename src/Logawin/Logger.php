@@ -24,6 +24,16 @@ class Logger implements LoggerInterface
     }
 
     /**
+     * Returns the current cask
+     *
+     * @return TapInterface[]
+     */
+    public function getCask(): array
+    {
+        return $this->cask;
+    }
+
+    /**
      * Adds a Tap to the cask.
      *
      * @param TapInterface $tap The TapInterface to be added.
@@ -51,7 +61,7 @@ class Logger implements LoggerInterface
     public function removeTap(TapInterface $tap): void
     {
         foreach ($this->cask as $key => $element) {
-            if ($element === $tap) {
+            if ($element instanceof $tap && $element->getMinimumLevel() === $tap->getMinimumLevel()) {
                 unset($this->cask[$key]);
             }
         }
